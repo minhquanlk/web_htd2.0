@@ -8886,3 +8886,7 @@ nav.navbar.bootsnav {
         display: none;
     }
 }
+
+.wow .item:hover {
+    background-color: #ebf6ff;
+}
