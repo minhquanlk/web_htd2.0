@@ -3232,7 +3232,7 @@ body,
     margin-bottom: 5px;
 }
 
-.services-area ul.achivement li:last-child .counter {
+.services-area ul.achivement li:nth-child(2) .counter {
     position: relative;
     display: flex;
     align-items: center;
