@@ -8891,3 +8891,32 @@ nav.navbar.bootsnav {
 .wow .item:hover {
     background-color: #ebf6ff;
 }
+
+footer .social-links.red-color a {
+    color: #fff !important;
+    background: rgba(8, 15, 30, 0.3);
+}
+
+footer .social-links.red-color a:hover {
+    background: #F54748;
+}
+
+footer .social-links.gray-bg a {
+    background-color: rgba(2, 2, 30, 0.3);
+    color: #fff !important;
+}
+
+footer .social-links a {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 25px;
+    margin-left: 15px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
