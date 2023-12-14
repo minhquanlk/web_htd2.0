@@ -2895,6 +2895,7 @@ body,
     transition: all 0.35s ease-in-out;
     overflow: hidden;
     position: relative;
+    min-height: 370px;
 }
 
 .features-area .single-item .item>i {
@@ -2989,6 +2990,7 @@ body,
     z-index: 1;
     transition: all 0.35s ease-in-out;
     border-radius: 5px;
+    min-height: 495px;
 }
 
 .services-area.inc-thumbnail .services-items .single-item .item {
@@ -3034,6 +3036,13 @@ body,
     color: #ffffff;
 }
 
+.services-area .services-items .single-item:nth-child(2) .item i,
+.services-area .services-items .single-item:nth-child(2) .item h4,
+.services-area .services-items .single-item:nth-child(2) .item p,
+.services-area .services-items .single-item:nth-child(2) .item span {
+    color: #ffffff;
+}
+
 .services-area .services-items .single-item .item:hover i {
     background: #ffffff;
     color: #1273eb;
@@ -3043,8 +3052,22 @@ body,
     color: #EC1C24;
 }
 
+.services-area .services-items .single-item:nth-child(2) .item i {
+    background: #ffffff;
+    color: #1273eb;
+}
+
+.torch-red .services-area .services-items .single-item:nth-child(2) .item i {
+    color: #EC1C24;
+}
+
 .services-area .services-items .single-item .item:hover span,
 .services-area .services-items .single-item .item:hover a {
+    background: transparent;
+}
+
+.services-area .services-items .single-item:nth-child(2) .item span,
+.services-area .services-items .single-item:nth-child(2) .item a {
     background: transparent;
 }
 
@@ -3056,7 +3079,19 @@ body,
     opacity: 0;
 }
 
+.services-area .services-items .single-item:nth-child(2) .item .info .bottom::after {
+    opacity: 0;
+}
+
+.services-area .services-items .single-item:nth-child(2) .item span {
+    opacity: 0.3;
+}
+
 .services-area .services-items .single-item .item:hover a {
+    color: #ffffff;
+}
+
+.services-area .services-items .single-item:nth-child(2) .item a {
     color: #ffffff;
 }
 
@@ -3064,11 +3099,15 @@ body,
     height: 100%;
 }
 
+.services-area .services-items .single-item:nth-child(2) .item::after {
+    height: 100%;
+}
+
 .services-area .services-items .info .bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 50px;
     position: relative;
     z-index: 1;
 }
@@ -3153,10 +3192,10 @@ body,
 
 .services-area .services-heading h4 {
     text-transform: uppercase;
-    color: #1273eb;
-    font-weight: 600;
+    color: #EC1C24;
+    font-weight: 800;
     display: inline-block;
-    background: linear-gradient(90deg, rgba(18, 115, 235, 1) 30%, rgba(4, 215, 242, 1) 100%);
+    background: linear-gradient(90deg, rgb(255, 204, 215) 0%, rgb(255, 185, 249) 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -3164,20 +3203,17 @@ body,
 }
 
 .services-area ul.achivement {
-    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
 }
 
 .services-area ul.achivement li {
     display: inline-block;
-    margin-right: 80px;
+    margin-right: 0px;
     float: left;
     font-family: 'Poppins', sans-serif;
-}
-
-.services-area ul.achivement li:last-child {
-    padding: 0;
-    margin: 0;
-    border: none;
 }
 
 .services-area ul.achivement li .counter {
@@ -3188,11 +3224,27 @@ body,
     position: relative;
     display: flex;
     align-items: center;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 600;
     color: #ffffff;
-    line-height: 1;
+    line-height: 1.2;
     margin-bottom: 5px;
+}
+
+.services-area ul.achivement li:last-child .counter {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 75px;
+    font-weight: 700;
+    color: #ffee00;
+    background: linear-gradient(to right, #fffc63, #ffcf4c, #fffc56, #feffd4, #e7fffc);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+    margin-bottom: -15px;
 }
 
 .services-area ul.achivement li .counter .operator {
@@ -3856,17 +3908,6 @@ body,
 .choose-us-area {
     position: relative;
     z-index: 1;
-}
-
-.choose-us-area::after {
-    position: absolute;
-    left: 0;
-    top: 0;
-    content: "";
-    height: 120px;
-    width: 100%;
-    background: linear-gradient(90deg, rgba(237, 245, 255, 1) 0%, rgba(204, 223, 247, 1) 100%);
-    z-index: -1;
 }
 
 .choose-us-area .item-box {
@@ -5540,7 +5581,7 @@ body,
     position: relative;
     display: flex;
     align-items: center;
-    font-size: 36px;
+    font-size: 16px;
     font-weight: 600;
     color: #232323;
     line-height: 1;
@@ -5633,15 +5674,7 @@ body,
 }
 
 .earna-career .job-lists .item .info ul li::after {
-    position: absolute;
-    right: -15px;
-    top: 50%;
-    content: "";
-    height: 5px;
-    width: 5px;
-    background: #666666;
-    border-radius: 50%;
-    margin-top: -2px;
+    display: none;
 }
 
 .earna-career .job-lists .item .info ul li:last-child::after {
@@ -5652,6 +5685,10 @@ body,
 /* ============================================================== 
      # Blog Area  
 =================================================================== */
+
+.item .thumb {
+    min-height: 290px;
+}
 
 .blog-area .blog-items .single-item {
     margin-bottom: 30px;
@@ -5669,6 +5706,7 @@ body,
     padding-top: 40px !important;
     background: #ffffff;
     border-radius: 0 0 5px 5px;
+    min-height: 387px;
 }
 
 .blog-area .blog-items .info h2,
