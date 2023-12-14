@@ -8908,15 +8908,27 @@ footer .social-links.gray-bg a {
 
 footer .social-links a {
     display: inline-block;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
     text-align: center;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.3);
     color: #fff;
-    font-size: 25px;
-    margin-left: 15px;
+    font-size: 35px;
+    margin-left: 20px;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+}
+
+footer .social-links a:nth-child(1) {
+    background-color: #0055b9;
+}
+
+footer .social-links a:nth-child(2) {
+    background-color: #ff0000;
+}
+
+footer .social-links a:nth-child(3) {
+    background-color: #0055b9;
 }
